@@ -14,11 +14,11 @@ export default function App() {
     'Josefin': require('./src/Assets/Fonts/Josefin_Sans/JosefinSans-Regular.ttf')
   });
 
+  //Sino puede descargar la fuente, retorna null
   if (!fontsLoaded) {
     return null;
   }
-  //Acá se manejará el estado para seleccionar una category y un producto
-  
+
   return (
     <View style = {styles.container}>
       <Header/>
@@ -32,7 +32,7 @@ export default function App() {
           setCategorySelected={setCategorySelected}
         />
       }
-      {/* <ItemListCategory/> */}
+      {/* //Aca va air el ItemListCategory -> <ItemListCategory/> */}
     </View>
   );
 }
