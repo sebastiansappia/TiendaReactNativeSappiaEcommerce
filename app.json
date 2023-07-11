@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "my-ecommerce",
-    "slug": "my-ecommerce",
+    "name": "E-Commerce CoderHouse",
+    "slug": "E-Commerce CoderHouse",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
