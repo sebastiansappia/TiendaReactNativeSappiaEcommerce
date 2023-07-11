@@ -21,6 +21,8 @@ export default CategoryItem
 
 const styles = StyleSheet.create({
     textCategory: {
-        fontSize: 18
+        fontSize: 18,
+        fontFamily: 'Nunito',
+        padding: 20,
     }
 })

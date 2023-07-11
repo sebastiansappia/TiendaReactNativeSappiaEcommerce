@@ -29,5 +29,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     height: 120,
     justifyContent: 'space-between'
-  }
+  },
+  textCategory: {
+    fontSize: 18,
+    fontFamily: 'Nunito',
+    padding: 20,
+}
 })

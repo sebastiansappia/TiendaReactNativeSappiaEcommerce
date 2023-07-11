@@ -24,7 +24,7 @@ export default Home
 const styles = StyleSheet.create({
     container: {
         height: '90%',
-        backgroundColor: colors.lightPink,
+        backgroundColor: colors.one,
         alignItems: 'center'
     }
 })

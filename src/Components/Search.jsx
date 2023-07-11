@@ -15,18 +15,18 @@ const Search = ({
   return (
     <View style ={styles.container}>
         <TextInput style ={styles.input} 
-            placeholder='Search...'
+            placeholder='Buscar...'
             value={keyword}
             onChangeText={setKeyword}
         />
         <Pressable onPress={()=>onSearch(keyword)}>
-            <FontAwesome name="search" size={24} color="black" />
+            <FontAwesome name="search" size={24} color={colors.three}/>
         </Pressable>
         <Pressable onPress={()=> setKeyword("")}>
-            <FontAwesome5 name="eraser" size={24} color="black" />
+            <FontAwesome5 name="eraser" size={24} color={colors.three}/>
         </Pressable>
         <Pressable onPress={goBack}>
-            <AntDesign name="back" size={24} color="black" />
+            <AntDesign name="back" size={24} color={colors.three}/>
         </Pressable>
        { error ?
          <Text>
@@ -48,10 +48,11 @@ const styles = StyleSheet.create({
         gap: 18,
     },
     input: {
-        width: 250,
+        width: 200,
         padding: 8,
         fontSize: 18,
-        backgroundColor: colors.pink,
-        borderRadius: 10,
+        borderBottomColor: colors.three,
+        borderBottomWidth: 3,
+        borderRadius: 1,
     }
 })
