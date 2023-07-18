@@ -4,25 +4,30 @@ import Card from './Card'
 
 const CategoryItem = ({
   item,
-  setCategorySelected
+  navigation
 }) => {
+  const { width } = useWindowDimensions()
   return (
-    <Pressable
-      onPress={()=>setCategorySelected(item)}
-    >
-      <Card>
+    <View style={{ width: width, alignItems: 'center' }}>
+      <Pressable
+        onPress={() => navigation.navigate('ItemListCategory', { category: item })}
+      >
+        <Card
+          additionalStyle={styles.additionalStyle}
+        >
           <Text style={styles.textCategory}>{item}</Text>
-      </Card>
-    </Pressable>
+        </Card>
+      </Pressable>
+    </View>
   )
 }
 
 export default CategoryItem
 
 const styles = StyleSheet.create({
-    textCategory: {
-        fontSize: 18,
-        fontFamily: 'Nunito',
-        padding: 20,
-    }
+  textCategory: {
+    fontSize: 18,
+    fontFamily: 'Nunito',
+    padding: 20,
+  }
 })
