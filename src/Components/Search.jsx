@@ -1,9 +1,8 @@
-import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native'
+import { Pressable, StyleSheet, Text, TextInput, View, useWindowDimensions } from 'react-native'
 import React, { useState } from 'react'
 import { FontAwesome } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { colors } from '../Global/Colors';
-import { AntDesign } from '@expo/vector-icons';
 
 const Search = ({
     onSearch,
@@ -26,10 +25,10 @@ const Search = ({
             onChangeText={setKeyword}
         />
         <Pressable onPress={()=>onSearch(keyword)}>
-            <FontAwesome name="search" size={24} color={colors.three} />
+            <FontAwesome name="search" size={24} color="black" />
         </Pressable>
         <Pressable onPress={onErase}>
-            <FontAwesome5 name="eraser" size={24} color={colors.three} />
+            <FontAwesome5 name="eraser" size={24} color="black" />
         </Pressable>
         
        { error ?

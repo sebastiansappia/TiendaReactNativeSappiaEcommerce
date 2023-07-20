@@ -1,5 +1,4 @@
-import { Image, StyleSheet, Text } from 'react-native'
-import React from 'react'
+import { Image, Pressable, StyleSheet, Text, useWindowDimensions } from "react-native"
 import Card from './Card'
 
 const ProductItem = ({
